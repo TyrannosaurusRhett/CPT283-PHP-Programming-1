@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>RhettTProgram2</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+
+	<style type="text/css">
+		body{
+			background-color: rgb(255, 255, 224); /*light yellow*/
+			font-family: 'Varela Round', sans-serif;
+			color: rgb(25, 25, 112); /*midnight blue*/
+		}
+		label{
+			font-weight: bold;
+		}
+		.button{
+			background-color: rgb(135, 206, 235); /*sky blue*/
+			font-weight: bold;
+			padding: 5px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<h1>Weather Wizards Workshops</h1>
+	<p>We host weather wizards workshops throughout the year for kids 6-12.</p>
+	<p>Please note that the following workshops are free to members:</p>
+	<ul>
+		<li>Make a Rain Gauge</li>
+		<li>Make a Thermometer</li>
+	</ul>
+
+	<form action="checkform.php" method="post">
+		<fieldset><legend><strong>Register Your Interests</strong></legend>
+			<input type="checkbox" name="shops[]" value="Make a Rain Gauge"> Make a Rain Gauge<br>
+			<input type="checkbox" name="shops[]" value="Make a Thermometer"> Make a Thermometer<br>
+			<input type="checkbox" name="shops[]" value="Make a Windsock"> Make a Windsock<br>
+			<input type="checkbox" name="shops[]" value="Make Lightning in Your Mouth"> Make Lightning in Your Mouth<br>
+			<input type="checkbox" name="shops[]" value="Make a Hygrometer"> Make a Hygrometer
+
+			<p><label>Your Name:<br><input type="text" name="name" size="40" maxlength="60"></label></p>
+
+			<p><label>Your parent or guardian's name:<br><input type="text" name="guardian" size="40" maxlength="60"></label></p>
+
+			<p><label>Your parent or guardian's email:<br><input type="email" name="email" size="40" maxlength="60"></label></p>
+
+			<p><label>Your parent or guadian's phone:<br><input type="tel" name="phone" size="40" maxlength="60"></label></p>
+
+			<p><label>Your closest center:
+				<select name="location" class="button">
+					<option value="charleston">Charleston</option>
+					<option value="summerville">Summerville</option>
+					<option value="pleasant">Mt. Pleasant</option>
+				</select>
+			</label></p>
+
+			<p><label for="member">Are you a member?</label><input type="radio" name="member" value="Y"> Yes <input type="radio" name="member" value="N"> No <input type="radio" name="member" value="S">Sign me up!</p>
+		</fieldset>
+
+		<p><input type="submit" name="submit" value="Register" class="button"> <input type="reset" name="reset" value="Reset" class="button"></p>
+	</form>
+
+</body>
+</html>
