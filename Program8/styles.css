@@ -1,0 +1,37 @@
+<style type="text/css">
+
+h1{
+	display: flex;
+	justify-content: center;
+}
+.index {
+	color: rgb(255, 0, 0); /*red*/
+	font-weight: bold;
+	font-size: 2em;
+}
+.error {
+	color: rgb(255, 0, 0); /*red*/
+	font-weight: bold;
+}
+form {
+	margin-top: 30px;
+	margin-bottom: 30px;
+			
+}
+fieldset {
+	width: 500px;
+	margin-left: 60px;
+}
+p {
+	margin-left: 10px;
+}
+table{
+	border-collapse: collapse;
+	width: 700px;
+	text-align: left;
+}
+.cities table{
+	border: 1px, solid, black;
+}
+
+</style>
